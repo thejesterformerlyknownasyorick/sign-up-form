@@ -1,3 +1,71 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 :root {
-    background-color: aqua;
+    background-color: rgb(1, 1, 48);
+}
+
+@font-face {
+    font-family: pirata-one;
+    src: url(./fonts/PirataOne-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    width: 40vw;
+    height: 100vh;
+    background: url("./images/Gloomhaven.jpg");
+    background-size: 40vw 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-container {
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-container img {
+    height: clamp(60px, 80%, 120px);
+    filter: invert(1) brightness(1);
+}
+
+.logo-container p {
+    font-family: pirata-one;
+    font-size: clamp(60px, 80%, 120px);
+    color: white;
+    overflow: hidden;
+}
+
+.art-foot {
+    color: white;
+    align-self: end;
+}
+
+a:link {
+    color: grey;
+}
+
+a:visited {
+    color: grey
 }
