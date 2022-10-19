@@ -17,16 +17,50 @@
             <p>Art by:&nbsp;&nbsp;&nbsp;<a href="https://alexandrelichev.artstation.com/projects/XnraQR">Alexandr Elichev</a></p>
         </div>
     </div>
-    <div>
+    <div class="right-side">
         <div>
-            Please play Gloomhaven with me, no one will play it with me and I need two more people. Sign up here.
+            <p>Please play Gloomhaven with me, no one will play it with me and I need two more people.</p>
+            <p>Sign up below.</p>
         </div>
         <div>
-            DON'T ASK ABOUT THE TABLES
+            <p>Really? You really want to send me your info?</p>
+            <form id="submit-info" action="#" method="post">
+                <div>
+                    <label for="given-name">
+                        First Name
+                            <input type="text" name="given-name" id="given-name" autocomplete="given-name" placeholder="Isaac" required>
+                    </label>
+                    <label for="family-name">
+                        Last name
+                            <input type="text" name="family-name" id="family-name" autocomplete="family-name" placeholder="Childres" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        Email
+                            <input type="text" name="email" id="email" autocomplete="email" placeholder="support@cephalofair.com" required>
+                    </label>
+                    <label for="mobile">
+                        Phone Number
+                            <input type="text" name="mobile" id="mobiler" autocomplete="mobile" placeholder="(555)409-2304" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="new-password">
+                        Password
+                            <input type="text" name="new-password" id="new-password" required>
+                            <p class="pass-check">Your password is a bad password. Make better decisions.</p>
+                    </label>
+                    <label for="confirm-password">
+                        Confirm Password
+                            <input type="text" name="confirm-password" id="confirm-password" required>
+                    </label>
+                </div>
+            </form>
         </div>
         <div>
-            Sign up button
-            Don't know what Gloomhaven is? Find out.
+            <button form="create" type="submit" name="submit">Send me all your personal details.</button>
+            <p>Don't know what Gloomhaven is? <a href="https://boardgamegeek.com/boardgame/174430/gloomhaven">Find out.</a></p>
         </div>
     </div>
 </body>
